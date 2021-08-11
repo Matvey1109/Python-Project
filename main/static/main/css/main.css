@@ -1,0 +1,405 @@
+body {
+ position: relative;
+ font-family: 'Noto Sans', sans-serif;
+ font-size: 16px;
+ line-height: 1.4;
+ color: #000;
+ min-width: 320px;
+ overflow-x: hidden;
+ height: auto;
+}
+
+.navbar {
+ width: 100%;
+ height: 80px;
+ box-shadow: 0 4px 10px rgb(0, 0, 0, .1);
+}
+
+.navbar .container {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.navbar-menu {
+ list-style-type: none;
+ padding-left: 0;
+ margin-bottom: 0;
+}
+
+.navbar-menu li {
+ display: inline-block;
+}
+
+.navbar-menu li a {
+ display: inline-block;
+ color: white;
+ text-decoration: none;
+ padding: 12px;
+ transition: all .15s ease-in-out;
+}
+
+.navbar-wrap {
+ display: flex;
+ flex-flow: row nowrap;
+}
+
+.item {
+ margin-left: 30px;
+ padding: 10px 30px;
+ background-color: #00FFE2;
+ border-radius: 100px;
+ color: white;
+ text-decoration: none;
+ box-shadow: 0 4px 6px rgb(0, 255, 226, .2);
+ transition: all .1s ease-in-out;
+}
+
+.item:hover {
+ transform: scale(1.1);
+ box-shadow: 0 9px 9px rgb(0, 255, 226, .5);
+}
+
+.navbar-brand {
+ font-weight: 700;
+ font-size: 26px;
+ text-decoration: none;
+ color: black;
+ transition: all .15s ease-in-out;
+}
+
+.navbar-brand:hover {
+ color: #00FFE2;
+}
+
+.features {
+ float: center;
+ color: black;
+ margin-top: 100px;
+ text-align: center;
+ width: 100%;
+}
+
+.features h1 {font-size: 50px;}
+.features p {max-width: 400px; margin: 20px auto}
+
+/* Contacts */
+.container-contacts{
+	max-width: 100%;
+	margin: 0 auto;
+	background-color: white;
+	height: 100vh;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:hover {
+   text-decoration: none;
+}
+
+.header{
+	display: flex;
+	justify-content: space-between;
+	color: #fff;
+	background-color: white;
+	padding: 2em 0;
+	align-items: center;
+	border: 1px solid #000;
+}
+
+.contact-search{
+	font-size: 1.2em;
+	padding:.3em .3em;
+	border-radius: 100px;
+	border:1px solid black;
+	outline: none;
+	margin-left: 20px;
+}
+
+
+.contacts-library{
+	background-color: #00FFE2;
+}
+
+.add{
+    color: black;
+	font-size: 1.5em;
+	margin-right: 25px;
+}
+
+i{
+	color: white;
+	font-size: 1.5em;
+}
+
+.contact-name{
+	color: #fff;
+	font-size: 1.2em;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.list__item{
+	list-style: none;
+}
+
+.relationship{
+	color: black;
+	width: 6.3em;
+	text-align: center;
+	padding: .4em .5em;
+	border-radius: 100px;
+	border-top-left-radius: 0;
+	background-color: #F8F8F8;
+}
+
+.contact-section{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1.5em;
+	transition: 0.3s;
+	border: 1px solid black;
+}
+
+.contact-section:hover{
+	background-color: #00E7CC;
+}
+
+.text{
+	padding-left: 1em;
+}
+
+/* Add contact */
+
+.container2{
+	max-width: 100%;
+	margin: 0 auto;
+	background-color: white;
+	min-height: 100vh;
+}
+
+.hero{
+	color: black;
+	background-color: white;
+	padding: 2em 0;
+}
+
+.back-btn{
+	color: black;
+	font-size: 1.7em;
+	padding-left: 1em;
+}
+
+.contact-info{
+    padding-top: 0;
+	padding: 1.5em;
+}
+
+.hero-info{
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	font-weight: 900;
+    font-size: 26px;
+}
+
+h1.name {
+    text-shadow: 1px 1px 1.4px black;
+}
+
+.relationship-hero{
+	width: 6.3em;
+	text-align: center;
+	padding: .4em .5em;
+	border-radius: 100px;
+	border-top-left-radius: 0;
+	margin: 0;
+	background-color: #F8F8F8;
+}
+
+
+.info-line{
+	display: flex;
+	color: black;
+	width: 90%;
+	margin: 0 auto;
+	padding: 1em 2em;
+	margin-top: 2em;
+	border-radius: 20px;
+	box-shadow: inset 1px 1px 3px #2d2f33,
+                inset -1px -1px 3px #35393d;
+}
+
+.icon-gradient{
+	background-color: #00FFE2;
+	border-radius: 100px;
+	font-size: 1.5em;
+	padding: .5em;
+}
+
+.location{
+	padding: .5em .6em;
+}
+
+.type{
+	border: none;
+	background: none;
+	padding-left: 2em;
+	font-size: 1.2em;
+	color: black;
+	outline: none;
+	width: 100%;
+}
+
+.button-container{
+	background-color: white;
+	padding: 2em 3.5em;
+	color: black;
+	transition: all .1s ease-in-out;
+}
+
+.update-contact:hover {
+ transform: scale(1.1);
+}
+
+.update-contact{
+	display: flex;
+	color: black;
+	width: 30%;
+	margin: 0 auto;
+	align-items: center;
+	padding: 1em 2em;
+	border-radius: 20px;
+	box-shadow: inset 1px 1px 3px #2d2f33,
+                inset -1px -1px 3px #35393d;
+    transition: all .1s ease-in-out;
+}
+
+.contact-button{
+	 background-color: white;
+	 border: none;
+	 color: black;
+	 font-size: 1.3em;
+	 padding-left: 1.5em;
+	 outline: none;
+	 cursor: pointer;
+	 align-items: center;
+}
+
+/* Contact Profile */
+
+.contact-info profile{
+	padding: 3em 1.5em;
+}
+
+.hero-info profile{
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+}
+
+.relationship{
+	width: 6.3em;
+	text-align: center;
+	align-items: center;
+	padding: .4em .5em;
+	border-radius: 100px;
+	border-top-left-radius: 0;
+	margin: 0;
+	background-color: #F8F8F8;
+}
+
+.info-line{
+	display: flex;
+	color: black;
+	width: 90%;
+	margin: 0 auto;
+	align-items: center;
+	padding: 1em 2em;
+	margin-top: 2em;
+	border-radius: 20px;
+	box-shadow: inset 1px 1px 3px #2d2f33,
+                inset -1px -1px 3px #35393d;
+}
+
+p.phone-number, p.email, p.address{
+    margin-bottom: 0;
+    padding-left: 2em;
+    font-size: 1.2em;
+    outline: none;
+}
+
+.edit-contact{
+	background-color: white;
+	padding: 2.5em 3.5em;
+	text-align: center;
+	align-items: center;
+	color: #fff;
+}
+
+/* Edit Contact */
+
+input{
+    margin-bottom: 0;
+    padding-left: 2em;
+    font-size: 1.2em;
+    outline: none;
+}
+
+/* Delete Contact */
+
+.delete-container{
+	color: black;
+	text-align: center;
+	padding: 2em 3.5em;
+	align-items: center;
+}
+
+.p-delete{
+    font-size: 22px;
+    padding-bottom: .2em;
+    padding-top: 3em;
+}
+
+/* Translate */
+
+.translate {
+    text-align: center;
+    padding-top: 30px;
+    text-shadow: 0.2px 0.2px 0.2px black;
+}
+
+.translated{
+    padding-top: 30px;
+}
+
+.tr{
+    text-align: center;
+    padding-top: 30px;
+    color: #F12727;
+    text-shadow: 0.4px 0.4px 0.4px #F12727;
+}
+
+.btn-outline-primary{
+    font-size: 25px;
+    transition: all .1s ease-in-out;
+}
+
+.btn-outline-primary:hover{
+    transform: scale(1.1);
+}
+
+.u-lang{
+    color: #007bff;
+}
+
+.t-lang{
+    color: #007bff;
+}

@@ -1,0 +1,30 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Удалить контакт{% endblock %}
+
+{% block main %}
+	<div class="container2">
+		<header class="hero">
+			<a href="{% url 'edit_contact' contact.id %}">
+				<i class="fas fa-chevron-circle-left back-btn"></i>
+			</a>
+			<div class="hero-info">
+				<h1 class="name">{{ contact.full_name | title }}</h1>
+				<p class="relationship-hero">{{ contact.relationship | title }}</p>
+			</div>
+		</header>
+
+		<section class="delete-container button-container">
+			<p class="p-delete">Вы уверены что хотите удалить этот контакт?</p>
+
+			<form method="POST">
+				{% csrf_token %}
+				<div class="update-contact">
+					<i class="fas fa-trash icon-gradient"></i>
+					<button type="submit" class="contact-button delete">Удалить</button>
+				</div>
+			</form>
+
+		</section>
+	</div>
+{% endblock %}

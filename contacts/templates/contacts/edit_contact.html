@@ -1,0 +1,78 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Изменить контакт{% endblock %}
+
+{% block main %}
+	<div class="container2">
+		<header class="hero">
+			
+			<a href="{% url 'contact_profile' contact.id %}">
+			     <i class="fas fa-chevron-circle-left back-btn"></i>
+			</a>
+
+			<div class="hero-info">
+				<h1 class="name">{{ contact.full_name | title }}</h1>
+				<p class="relationship-hero">{{ contact.relationship | title }}</p>
+			</div>
+		</header>
+
+		<form action="" method="POST">
+			{% csrf_token %}
+			<section class="contact-info">
+				<div class="info-line">
+					<i class="fas fa-phone icon-gradient"></i>
+					<input type="text" class="type" name="full_name" placeholder="Full Name"
+						value="{{ contact.full_name }}">
+				</div>
+
+				<div class="info-line">
+					<i class="fas fa-user-circle icon-gradient"></i>
+					<input type="text" class="type" name="relationship" placeholder="Relationship"
+						value="{{ contact.relationship }}">
+				</div>
+
+
+
+				<div class="info-line">
+					<i class="fas fa-sms icon-gradient"></i>
+					<input type="text" class="type" name="phone_number" placeholder="Phone Number"
+						value="{{ contact.phone_number }}">
+				</div>
+
+
+
+				<div  class="info-line">
+					<i class="fas fa-envelope icon-gradient"></i>
+					<input type="text" class="type" name="email" placeholder="Email"
+						value="{{ contact.email }}">
+				</div>
+
+
+
+				<div class="info-line">
+					<i class="fas fa-map-marker-alt icon-gradient location"></i>
+					<input type="text" class="type" name="address" placeholder="Address"
+						value="{{ contact.address }}">
+				</div>
+
+			</section>
+
+			<section class="button-container">
+				<div class="update-contact">
+					<i  class="fas fa-check-circle icon-gradient"></i>
+					<button type="submit" class="contact-button">Сохранить</button>
+				</div>
+			</section>
+
+		</form>
+
+		<section class="button-container">
+			<a href="{% url 'delete_contact' contact.id %}">
+				<div class="update-contact">
+					<i class="fas fa-trash icon-gradient"></i>
+					<button type="submit" class="contact-button">Удалить</button>
+				</div>
+			</a>
+		</section>
+	</div>
+{% endblock %}
