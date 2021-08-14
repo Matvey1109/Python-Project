@@ -1,5 +1,5 @@
 import requests
-from django.shortcuts import render, redirect
+from django.shortcuts import render
 from .models import City
 from .forms import CityForm
 

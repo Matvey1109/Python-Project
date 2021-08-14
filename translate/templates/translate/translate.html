@@ -5,13 +5,14 @@
 {% block main %}
 <form action="translated" method="GET">
     <div class="form-group">
-        <h3 class="translate">Enter text in any language</h3>
-        <textarea placeholder="Enter Text To Translate" name="text" id="exampleFormControlTextarea1" rows="5" class="form-control"></textarea>
+        <h3 class="translate">Введите текст на любом языке</h3>
+        <textarea placeholder="Enter text to translate" name="text" id="exampleFormControlTextarea1" rows="5"
+                  class="form-control"></textarea>
     </div>
 
     <br>
 
-    <h3 class="translate">Select Language</h3>
+    <h3 class="translate">Выберете язык</h3>
     <select class="form-select" aria-label="Default select example" name="lang">
         <option value="en" selected>English</option>
         <option value="ru">Russian</option>
@@ -24,7 +25,7 @@
 
     <br>
     <div class="translate">
-    <button type="Submit" class="btn btn-outline-primary">Translate</button>
+        <button type="Submit" class="btn btn-outline-primary">Перевести</button>
     </div>
 </form>
 {% endblock %}

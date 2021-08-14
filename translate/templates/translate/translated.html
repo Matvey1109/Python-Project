@@ -3,13 +3,14 @@
 {% block title %}Перевод{% endblock %}
 
 {% block main %}
-    <div class="container2">
-        <a href="{% url 'translate' %}">
-            <i class="fas fa-chevron-circle-left back-btn translated"></i>
-        </a>
-        <br>
-        <h1 class="translate">Text translated <span class="u-lang">{{ u_lang }}</span> into <span class="t-lang">{{ t_lang }}</span></h1>
-        <br>
-        <h3 class="tr">{{ translated }}</h3>
-    </div>
+<div class="container2">
+    <a href="{% url 'translate' %}">
+        <i class="fas fa-chevron-circle-left back-btn translated"></i>
+    </a>
+    <br>
+    <h1 class="translate">Text translated <span class="u-lang">{{ u_lang }}</span> into <span class="t-lang">{{ t_lang }}</span>
+    </h1>
+    <br>
+    <h3 class="tr">{{ translated }}</h3>
+</div>
 {% endblock %}

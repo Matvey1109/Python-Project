@@ -1,8 +1,10 @@
 from django.shortcuts import render
 from googletrans import Translator
 
+
 def translate(request):
     return render(request, 'translate/translate.html')
+
 
 def translated(request):
     text = request.GET.get('text')
@@ -14,4 +16,4 @@ def translated(request):
     dt2 = dt.lang
     translated = translator.translate(text, lang)
     tr = translated.text
-    return render(request, 'translate/translated.html', {'translated':tr, 'u_lang':dt2, 't_lang':lang})
+    return render(request, 'translate/translated.html', {'translated': tr, 'u_lang': dt2, 't_lang': lang})

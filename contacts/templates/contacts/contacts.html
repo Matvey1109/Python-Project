@@ -7,7 +7,8 @@
 <div class="container-contacts">
     <header class="header">
         <form action="/contacts/" method="GET" class="search-bar">
-            <input type="search_name" class="contact-search" name="search_area" placeholder="Найти" value="{{ search_input }}">
+            <input type="search_name" class="contact-search" name="search_area" placeholder="Найти"
+                   value="{{ search_input }}">
         </form>
         <a href="{% url 'add_contact' %}"><i class="fas fa-plus-circle add"></i></a>
     </header>
