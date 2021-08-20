@@ -33,6 +33,7 @@ INSTALLED_APPS = [
     'weather',
     'contacts',
     'translate',
+    'accounts',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

@@ -403,3 +403,92 @@ input{
 .t-lang{
     color: #007bff;
 }
+
+/* Authorization */
+
+h4.authorization{
+    text-align: center;
+    padding: 20px;
+    padding-top: 40px;
+}
+
+div.authorization{
+    text-align: center;
+    font-size: 33px;
+    color: #007bff
+}
+
+
+.login-box {
+  position: absolute;
+  width: 100%;
+  padding: 40px;
+  box-sizing: border-box;
+  border: 2px solid black;
+  text-align: center;
+}
+
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: black;
+  text-align: center;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input.user {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  background: transparent;
+}
+
+.login-box .user-box label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: black;
+  pointer-events: none;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -30px;
+  left: 0;
+  color: #00FFE2;
+  font-size: 18px;
+}
+
+.login-box form input.ok {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #00FFE2;
+  background-color: white;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px
+}
+
+.login-box input.ok:hover {
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #03e9f4;
+}

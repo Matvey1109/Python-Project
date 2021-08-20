@@ -6,5 +6,9 @@
     <div class="features">
         <h1>Главная страница</h1>
         <p>Вы попали на главную страницу моего сайта «Utilities». Главная идея - объединить несколько утилит в один сайт. Здесь вы можете посмотреть погоду в разных городах, записать личность в телефонную книжку и перевести текст на другой язык. Сайт сделан Косяковым Матвеем!</p>
+        <br><br><br><br><br><br><br><br>
+        Имя пользователя: <span style="color:#007bff">{{ user.username }}</span><br>
+        Email: <span style="color:#007bff">{{ user.email }}</span><br>
+        <a href="{% url 'logout' %}"><span style="color: red;">Выход</span></a>
     </div>
 {% endblock %}
