@@ -492,3 +492,11 @@ div.authorization{
               0 0 50px #03e9f4,
               0 0 100px #03e9f4;
 }
+
+.logout{
+    transition: all .1s ease-in-out;
+}
+
+.logout:hover{
+    transform: scale(1.22);
+}

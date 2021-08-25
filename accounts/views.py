@@ -1,7 +1,6 @@
 from django.urls import reverse
-from django.views.generic import TemplateView, ListView
+from django.views.generic import TemplateView
 from django.contrib.auth import authenticate, login, logout
-from django.http import HttpResponse
 from django.shortcuts import redirect, render, HttpResponseRedirect
 from django.contrib.auth.models import User
 
@@ -43,6 +42,6 @@ class Registration(TemplateView):
         return render(request, self.template_name)
 
 class Logout(TemplateView):
-    def get(self, request):
+    def get(self, request, *args, **kwargs):
         logout(request)
         return HttpResponseRedirect("/")

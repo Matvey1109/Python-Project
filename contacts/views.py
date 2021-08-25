@@ -1,15 +1,17 @@
 from django.shortcuts import render, redirect
-from .models import Contact
+from .models import Contact, ContactPermissions
 
 
 def contacts(request):
-    contacts = Contact.objects.all()
     search_input = request.GET.get('search_area')
     if search_input:
         contacts = Contact.objects.filter(full_name__icontains=search_input)
     else:
-        contacts = Contact.objects.all()
         search_input = ''
+        cp = ContactPermissions.objects.filter(author=request.user)
+        contacts = Contact.objects.none()
+        for c in cp:
+            contacts |= Contact.objects.filter(author=c.whom)
     return render(request, 'contacts/contacts.html', {'contacts': contacts, 'search_input': search_input})
 
 
@@ -22,7 +24,9 @@ def add_contact(request):
             phone_number=request.POST['phone_number'],
             address=request.POST['address']
         )
+        new_contact.author = request.user
         new_contact.save()
+        ContactPermissions.objects.create(author=request.user, whom=request.user)
         return redirect('/contacts/')
     return render(request, 'contacts/add_contact.html')
 

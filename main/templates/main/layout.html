@@ -25,6 +25,8 @@
 				<li><a href="{% url 'weather' %}" class="item">Погода</a></li>
     			<li><a href="{% url 'contacts' %}" class="item">Контакты</a></li>
     			<li><a href="{% url 'translate' %}" class="item">Переводчик</a></li>
+                <li style="margin-left: 20px;">Имя пользователя: <span style="color:#007bff;">{{ user.username }}</span></li>
+                <li><a href="{% url 'logout' %}" class="logout"><span style="color: red;">Выход</span></a></li>
 			</ul>
   			</div>
  		</div>
