@@ -464,7 +464,7 @@ div.authorization{
 .login-box .user-box input:valid ~ label {
   top: -30px;
   left: 0;
-  color: #00FFE2;
+  color: #007bff;
   font-size: 18px;
 }
 
@@ -472,7 +472,7 @@ div.authorization{
   position: relative;
   display: inline-block;
   padding: 10px 20px;
-  color: #00FFE2;
+  color: #007bff;
   background-color: white;
   font-size: 16px;
   text-decoration: none;
@@ -484,13 +484,13 @@ div.authorization{
 }
 
 .login-box input.ok:hover {
-  background: #03e9f4;
+  background: #007bff;
   color: #fff;
   border-radius: 5px;
-  box-shadow: 0 0 5px #03e9f4,
-              0 0 25px #03e9f4,
-              0 0 50px #03e9f4,
-              0 0 100px #03e9f4;
+  box-shadow: 0 0 5px #007bff,
+              0 0 25px #007bff,
+              0 0 50px #007bff,
+              0 0 100px #007bff;
 }
 
 .logout{
@@ -499,4 +499,9 @@ div.authorization{
 
 .logout:hover{
     transform: scale(1.22);
+}
+
+p:empty:not(:focus)::before {
+  content: attr(data-placeholder);
+  color: #868686
 }
